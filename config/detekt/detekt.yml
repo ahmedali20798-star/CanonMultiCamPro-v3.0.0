@@ -1,0 +1,39 @@
+build:
+  maxIssues: 0
+
+style:
+  MaxLineLength:
+    active: true
+    maxLineLength: 120
+    excludeCommentStatements: false
+  MagicNumber:
+    active: true
+    ignoreNumbers:
+      - '-1'
+      - '0'
+      - '1'
+      - '2'
+    ignoreHashCodeFunction: true
+    ignorePropertyDeclaration: true
+    ignoreConstantDeclaration: true
+    ignoreCompanionObjectPropertyDeclaration: true
+    ignoreAnnotation: true
+    ignoreNamedArguments: true
+    ignoreEnums: true
+  WildcardImport:
+    active: true
+  ReturnCount:
+    active: true
+    max: 4
+
+complexity:
+  LongMethod:
+    active: true
+    threshold: 35
+  CyclomaticComplexMethod:
+    active: true
+    threshold: 12
+  TooManyFunctions:
+    active: true
+    thresholdInClasses: 22
+    thresholdInFiles: 25
